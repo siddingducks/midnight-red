@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS LINKED HERE -->
+        <link href="style.css" rel="stylesheet" type="text/css" media="all">
+        <link href="https://fonts.googleapis.com/css?family=marcellus" rel="stylesheet">
+        <title>Midnight Red !</title>
+        <link rel="icon" type="image/x-icon" href="https://i.imgur.com/c0FS4rZ.png">
+    </head>
+    <body>
+    <div id="float-container" class="centered">
+        <div id="for-fun" class="float-child nudge-left"> <!--LEFT SIDE FUNNIES-->
+            <div class="page funzies">
+                <h3>Sidebar Content</h3>
+                <p>Hello, and welcome to your new, super cool website! This is the start of the left sidebar, which is a space where you can put loads of information about yourself or your services.</p>
+            </div>
+            <div class="page funzies">
+                <h3>More Content</h3>
+                <p>Don't know what should go here? No worries. Here are some ideas: your terms of service, your prices, your notable personality traits, your Hogwarts house, fun pictures—the list is endless! For an example of fun content, look below.</p>
+            </div>
+            <div class="page funzies">
+                <h3>Cool Graphics !</h3>
+                <img src="https://i.imgur.com/CsL3DQN.gif" alt="come, angels of unknown">
+                <img src="https://i.imgur.com/oDva3l3.gif" alt="Will bite!!!">
+                <img src="https://i.imgur.com/ABA9GEQ.gif" alt="i love scary movies"> 
+                <img src="https://i.imgur.com/8xAy8Hu.gif" alt="crimson fallen angel">
+                <img src="https://i.imgur.com/FdXRqQM.gif" alt="afro goth">
+                <img src="https://i.imgur.com/s6OCxfI.gif" alt="gothic vampire">
+            </div>
+        </div>
+        <div id="main" class="float-child"> <!-- MAIN BODY -->
+            <header class="page">
+                <h1>[Insert Your Title Here]</h1>
+            </header>
+            <div class="page">
+                <!-- INTRO -->
+                <h2>Hey there! I'm...</h2>
+
+                <div id="intro-container">
+                    <div id="intro">
+                        <img src="https://i.imgur.com/eF1xxu3.png" alt="anonymous profile picture" id="avatar">
+                        <span id="your-name">YOU !</span>
+                    </div>
+                </div>
+
+                <p>...the person who could own this website. I'm super chill, and I'm an awesome person. (Or at least, that's what the person who programmed this website thinks about me.)</p>
+                <img src="https://i.imgur.com/HI8BXxW.gif" alt=" skull and chain divider" width="100%">
+                <p><span class="underline">More About Me</span>: This is a continuation of my About Me. Here's a little more information about me or my services. Interested in getting to know me? Feel free to reach out. I love talking to new people and/or clients! </p>
+            </div>
+        </div>
+        <div id="for-fun" class="float-child"> <!--RIGHT SIDE FUNNIES-->
+            <div class="page funzies">
+                <h3>Sidebar Content</h3>
+                <p>This is the right sidebar. This space is a bigger than the spaces on the left sidebar so there's more room for content.</p>
+                <p>You can put information about whatever you want here! If you're a professional, you can link to your resume here. If this is a personal website, you can put things you're interested in here. Do whatever you want! This space is all yours.</p>
+                <p>...Oh hey, you're still reading? <em>Really?</em> Wow, guess you're really into this website! Check below for more info about how you can make this website yours.</p>
+            </div>
+            <div class="page funzies">
+                <h3>Contact Me</h3>
+                <p>Like how personalized and rad this website is? Looking for a website of your own? Email me at <a href="" data-part1="sidfarronantoine" data-part2="&#103;&#109;&#097;&#105;&#108;" data-part3="com"></a> for pricing.</p>
+            </div>
+        </div>
+    </div>
+    <!-- EMAIL ENCODER SCRIPT -->
+    <script>
+        const links = document.querySelectorAll("[data-part1][data-part2][data-part3]");
+        for (const link of links) {
+            const attrs = link.dataset;
+            link.setAttribute(
+                "href",
+                `mailto:${attrs.part1}@${attrs.part2}.${attrs.part3}?subject=${attrs.subject}`
+            );
+            link.textContent = `${attrs.part1}@${attrs.part2}.${attrs.part3}`;
+        }
+    </script>
+    </body>
+</html>
