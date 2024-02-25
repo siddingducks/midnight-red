@@ -35,7 +35,7 @@
                 <h1>[Insert Your Title Here]</h1>
             </header>
             <div class="page">
-                <!-- INTRO -->
+                <!-- PK Fronter -->
                 <h2>Hey there! I'm...</h2>
 
                 <div id="intro-container">
@@ -64,16 +64,6 @@
         </div>
     </div>
     <!-- EMAIL ENCODER SCRIPT -->
-    <script>
-        const links = document.querySelectorAll("[data-part1][data-part2][data-part3]");
-        for (const link of links) {
-            const attrs = link.dataset;
-            link.setAttribute(
-                "href",
-                `mailto:${attrs.part1}@${attrs.part2}.${attrs.part3}?subject=${attrs.subject}`
-            );
-            link.textContent = `${attrs.part1}@${attrs.part2}.${attrs.part3}`;
-        }
-    </script>
+    <script type="text/javascript" src="email-encoder.js"></script>
     </body>
 </html>
