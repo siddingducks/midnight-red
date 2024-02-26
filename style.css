@@ -9,7 +9,7 @@ html {
 
 body {
     /* Pixel Sky Series Red Nebula by Humble Pixel */
-    background-image: url("/images/pixel-sky-series-red-nebula-by-humble-pixel.gif");
+    background-image: url("images/pixel-sky-series-red-nebula-by-humble-pixel.gif");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #380202;
@@ -17,7 +17,7 @@ body {
     font-family: Georgia;
     display: table-cell;
     vertical-align: middle;
-    cursor: url("/images/skull-cursor.cur"), auto;
+    cursor: url("images/skull-cursor.cur"), auto;
   }
 
   h1, h2, h3 {
