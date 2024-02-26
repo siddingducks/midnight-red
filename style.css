@@ -79,7 +79,7 @@ body {
   }
 
   a:hover {
-    cursor: url("gothic-cursors/skull-cursor.cur"), auto;
+    cursor: url("images/skull-cursor.cur"), auto;
   }
   
   #intro-container
